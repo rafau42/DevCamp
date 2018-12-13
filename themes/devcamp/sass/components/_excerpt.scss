@@ -1,0 +1,44 @@
+.excerpt {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+
+  @include respond(under900) {
+    padding: 1rem 3rem;
+  }
+
+  @include respond(under600) {
+    padding: 1rem;
+  }
+
+  &__date {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-blue-4;
+    border-radius: 50%;
+    padding: 2rem 2.5rem;
+    text-align: center;
+    color: $color-white;
+  }
+
+  &__day {
+    font-size: 2.5rem;
+  }
+
+  &__text {
+    padding: 0 2rem;
+
+    @include respond(under600) {
+      padding: 0 0 0 2rem;
+    }
+  }
+
+  &__title {
+    color: $color-blue-4;
+    font-size: 18px;
+  }
+
+  &__read-more {
+    color: $color-pink;
+  }
+}

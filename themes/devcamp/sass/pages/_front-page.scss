@@ -1,0 +1,34 @@
+.container-posts {
+  display: flex;
+
+  @include respond(under900) {
+    flex-direction: column;
+  }
+
+  &__column {
+    width: 50%;
+    padding: 2rem 3rem;
+
+    @include respond(under900) {
+      width: initial;
+      padding: 2rem 1rem;
+    }
+
+    &--two {
+      background-color: $color-blue-1;
+    }
+  }
+
+  &__headline {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  &__archive-link {
+    display: block;
+    color: $color-red-darker;
+    margin: 2rem 2rem;
+    text-align: right;
+  }
+}
+

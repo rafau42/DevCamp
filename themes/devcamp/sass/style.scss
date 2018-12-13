@@ -1,0 +1,25 @@
+/*!
+Theme Name: Devcamp
+Author: Rafał Woszczak
+Version: 1.0
+*/
+
+/*! Tested Resolutions: 320px - 1280 px 
+Tested browsers: Google Chrome, Mozilla Firefox */
+
+@import "abstracts/mixins.scss";
+@import "abstracts/variables.scss";
+@import "base/base.scss";
+@import "base/utils.scss";
+@import "base/typhography.scss";
+@import "layout/navigation.scss"; 
+@import "layout/page-banner.scss"; 
+@import "layout/footer.scss"; 
+@import "pages/front-page.scss"; 
+@import "pages/page-about-us.scss"; 
+@import "pages/page-events.scss"; 
+@import "pages/page-programs.scss"; 
+@import "pages/page-locations.scss"; 
+@import "components/_slider.scss"; 
+@import "components/_excerpt.scss"; 
+@import "components/_blog-post.scss"; 

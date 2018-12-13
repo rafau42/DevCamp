@@ -1,0 +1,13 @@
+.page-events__archive-link {
+  color: $color-pink;
+}
+
+.event {
+  padding: 2rem 0;
+
+  &__headline {
+    color: $color-blue-3;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem black solid;
+  }
+}

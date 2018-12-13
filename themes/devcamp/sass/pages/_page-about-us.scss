@@ -1,0 +1,106 @@
+.page-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 12rem;
+  background-color: $color-grey-light;
+
+  @include respond(under1100) {
+    padding: 4rem 6rem;
+  }
+
+  @include respond(under1100) {
+    padding: 4rem 3rem;
+  }
+
+  @include respond(under500) {
+    padding: 4rem 1rem;
+  }
+}
+
+.metabox {
+  position: absolute;
+  top: -2.5rem;
+  width: 70%;
+
+  @include respond(under500) {
+    width: 90%;
+  }
+
+  &__link {
+    background-color: $color-blue-4;
+    padding: 2rem;
+    color: $color-white;
+  }
+
+  &__title {
+    background-color: bisque;
+    padding: 2rem;
+  }
+}
+
+.generic-content {
+  width: 70%;
+
+  @include respond(under900) {
+    width: 100%;
+    order: 1;
+  }
+}
+
+.page-links {
+  margin-left: 6rem;
+  text-align: center;
+
+  @include respond(under900) {
+    width: 100%;
+    padding-bottom: 3rem;
+    margin: 0;
+  }
+
+  &__title {
+    background-color: $color-blue-4;
+    color: $color-white;
+    padding: 2rem 6rem;
+  }
+
+  &__list {
+    background-color: bisque;
+  }
+
+  .page_item {
+    padding: 2rem 6rem;
+  }
+}
+
+.faq {
+&__button {
+  display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px 15px;
+    margin: 3px 0;
+    cursor: pointer;
+    background-color: $color-blue-4;
+    color: $color-white;
+}
+
+  &__icon:before {
+    font-family: "Genericons";
+    font-size: 2rem;
+    font-style: normal;
+    content: "\f501";
+    margin-right: 1rem;
+  }
+
+  &__answer {
+    display:none;
+    background-color: bisque;
+    padding: 2rem 1.5rem;
+    color: $color-dark;
+
+    & > p {
+      margin: 0;
+    }
+  }
+}

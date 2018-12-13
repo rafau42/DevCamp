@@ -1,0 +1,27 @@
+.page-banner {
+  position: relative;
+  height: 40rem;
+  background-size: cover;
+
+  &__content {
+    position: absolute;
+    z-index: 2;
+    @include absCenter;
+    text-align: center;
+    color: $color-white;
+
+    @include respond(under500) {
+      width: 80%;
+    }
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 5rem;
+  }
+
+  &__text {
+    font-size: 3rem;
+    line-height: 1.3;
+  }
+}

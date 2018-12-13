@@ -1,0 +1,89 @@
+.navigation {
+  width: 100%;
+  background-color: $color-dark;
+
+  &__toggle {
+    display: none;
+    position: relative;
+    width: 100%;
+    background-color: $color-dark;
+    border: 0;
+    padding: 1.8rem 0;
+    cursor: pointer;
+
+    @include respond(under800) {
+      font-size: 2.5rem;
+    }
+
+    @include respond(under700) {
+      display: block;
+      border-bottom: 0.3rem solid $color-grey;
+    }
+  }
+
+  &__icon {
+    font-family: "Genericons";
+    font-style: normal;
+    font-size: 2.1rem;
+    color: $color-white;
+    margin-left: 1rem;
+  }
+
+  &__icon-menu:before {
+    @include respond(under700) {
+      content: "\f419";
+    }
+  }
+
+  &__icon-menu-close:before {
+    @include respond(under700) {
+    content: "\f406";
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-color: $color-dark;
+    color: $color-white;
+  }
+
+  &__list {
+    @include respond(under700) {
+      display: none;
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    padding: 2rem 2rem 2rem 0;
+
+    @include respond(under700) {
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 1.8rem 0 1.8rem 3rem;
+      border-bottom: 0.3rem solid $color-grey;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    border-bottom: 0.2rem solid transparent;
+    color: $color-white;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+
+    @include respond(under700) {
+      width: 100%;
+    }
+  }
+}

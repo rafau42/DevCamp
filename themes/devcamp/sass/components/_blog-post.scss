@@ -1,0 +1,28 @@
+.blog-post {
+  padding: 2rem 0;
+
+  &__headline {
+    color: $color-blue-3;
+    padding-bottom: 1.5rem;
+  }
+
+  &__metabox {
+    background-color: $beige;
+    display: inline-block;
+    padding: 0 1rem;
+    font-size: 13px;
+  }
+
+  &__metabox-paragraph a {
+    color: $color-blue-3;
+    font-weight: 600;
+  }
+
+  &__read-more {
+    display: inline-block;
+    background-color: $color-blue-3;
+    color: $color-white;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+  }
+}

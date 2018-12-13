@@ -1,0 +1,57 @@
+.program {
+  padding: 2rem 0;
+
+  &__link {
+    color: $color-blue-3;
+  }
+
+  &__headline {
+    color: $color-blue-3;
+  }
+}
+
+.section-break {
+  margin: 4rem 0;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 0 4rem 0;
+
+  &__item {
+    padding: 0 2rem;
+
+    @include respond(under500) {
+      padding: 0 1rem;
+    }
+  }
+
+  &__icon {
+    font-size: 70px;
+
+    @include respond(under600) {
+      font-size: 60px;
+    }
+
+    @include respond(under400) {
+      font-size: 45px;
+    }
+  }
+}
+
+.skill {
+  &__title-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  &__headline {
+    color: $color-blue-3;
+  }
+
+  &__icon {
+    font-size: 60px;
+    margin-left: 4rem;
+  }
+}
